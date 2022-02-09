@@ -1,0 +1,96 @@
+.header-wrap {
+  min-height: 310px;
+  background-position: center;
+}
+@media only screen and (max-width: 739px) {
+  .header-wrap {
+    min-height: 400px;
+  }
+}
+
+/* SHOP */
+.shop {
+  padding: 50px 0;
+}
+.shop-item {
+  position: relative;
+  display: block;
+  margin-bottom: 24px;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.shop-item__img {
+  padding-top: 100%;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.shop-item__info {
+}
+.shop-item__heading {
+  padding: 10px 0;
+  color: var(--text-dark-color);
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.shop-item__vote-list {
+  display: flex;
+  margin-bottom: 20px;
+  color: var(--text-light-color);
+  list-style: none;
+}
+.shop-item__vote-item {
+  cursor: pointer;
+}
+.shop-item__vote-icon {
+  font-size: 1.2rem;
+}
+.shop-item__prices {
+  margin-bottom: 14px;
+  color: var(--text-light-color);
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+.shop-item__prices-from {
+}
+.shop-item__prices-to {
+}
+.shop-item__prices-to::before {
+  content: "-";
+  display: inline-block;
+}
+.shop-item--sell-off .shop-item__prices-from {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+.shop-item--sell-off .shop-item__prices-to {
+  text-decoration: underline;
+}
+.shop-item--sell-off::before {
+  content: "SALE!";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 8px;
+  background-color: var(--green-color);
+  color: var(--white-color);
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  line-height: 1.3rem;
+}
+.shop-item__btn {
+  display: inline-block;
+  border: 1px solid #bbbbbb;
+  padding: 8px 12px;
+  color: var(--text-light-color);
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.shop-item__btn:hover {
+  color: var(--white-color);
+  background-color: var(--green-color);
+}

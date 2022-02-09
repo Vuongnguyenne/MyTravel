@@ -1,0 +1,235 @@
+.header-wrap {
+  background-position: center;
+  min-height: unset;
+}
+@media only screen and (max-width: 739px) {
+  .header-wrap {
+    min-height: 580px;
+  }
+}
+.header-with-filter {
+  padding: 300px 0 50px;
+}
+.filter__heading {
+  color: var(--white-color);
+  text-align: left;
+}
+.filter__title {
+  color: var(--white-color);
+  text-align: left;
+  line-height: 4.5rem;
+  margin: 12px 0;
+}
+.filter__title > u.underline {
+  z-index: 2;
+}
+.filter__title > u.underline::after {
+  z-index: -1;
+}
+.filter-wrap {
+  position: relative;
+  padding: 35px;
+  margin: 50px 0;
+  background-color: var(--white-color);
+}
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.filter-item__label {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.filter-select-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter-select {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px 0px;
+  background: transparent;
+  color: currentColor;
+  -webkit-appearance: none;
+}
+.filter__input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  padding: 0 30px;
+  margin-top: 20px;
+  background-color: #f7f7f7;
+  color: var(--text-light-color);
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+.filter__input[type="range"] {
+  padding: 0;
+}
+.filter__checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+.filter__btn {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  padding: 8px 20px;
+  z-index: 1;
+  -webkit-tap-highlight-color: transparent;
+}
+.filter__btn:hover .filter-more {
+  display: block;
+}
+/* Filter more */
+.filter-more {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  padding: 30px;
+  box-shadow: 0 1px 5px #ccc;
+  background-color: var(--white-color);
+  display: none;
+  animation: fadeIn 0.2s linear;
+  top: 180%;
+  cursor: default;
+}
+.filter-more::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 20px;
+  height: 19px;
+  background: var(--white-color);
+  border-top: 1px solid #e6e5e5;
+  border-left: 1px solid #e6e5e5;
+}
+.filter-more::after {
+  content: "";
+  position: absolute;
+  top: -39px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 40px;
+}
+.filter-more-item label {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: var(--text-light-color);
+  cursor: pointer;
+}
+.filter-more-item__heading {
+  margin-bottom: 16px;
+  color: var(--text-dark-color);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.filter-more-item__checkbox-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0px;
+}
+/* Filter navbar */
+.filter-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-nav {
+  display: flex;
+  gap: 30px;
+  color: var(--white-color);
+  font-size: 1.4rem;
+  list-style: none;
+}
+.filter-nav__item {
+  position: relative;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.filter-nav__item:hover .filter-subnav {
+  display: block;
+}
+
+.filter-nav__item > i {
+  margin-left: 12px;
+}
+.filter-subnav {
+  position: absolute;
+  top: calc(100% + 12px);
+  display: none;
+  width: 150px;
+  list-style: none;
+  animation: fadeIn 0.2s linear;
+}
+
+.filter-subnav::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  height: 15px;
+  width: 50%;
+  left: 0;
+}
+.filter-subnav__item {
+  padding: 15px 20px;
+  background-color: var(--text-dark-color);
+  color: #e4e4e4;
+  cursor: pointer;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.filter-subnav__item:hover {
+  filter: brightness(1.2);
+}
+.filter-nav__item-img {
+  width: 25px;
+}
+/* Main card */
+.card {
+  padding: 50px 0;
+}
+/* Mobile and tablet */
+@media only screen and (max-width: 63.9375em) {
+  .header-wrap {
+    margin-bottom: 550px;
+  }
+  .filter-item {
+    margin: 24px 0;
+  }
+  .filter__input {
+    margin-top: 10px;
+  }
+  .filter-wrap {
+    margin: 0;
+  }
+  .filter-more-item {
+    margin: 12px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 46.1875em) {
+  .filter__heading {
+    padding: 0 24px;
+  }
+  .filter__title {
+    padding: 0 24px;
+  }
+}

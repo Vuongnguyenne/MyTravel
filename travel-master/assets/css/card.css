@@ -1,0 +1,130 @@
+/* Start cards */
+.card {
+  margin-bottom: 60px;
+}
+.card__title {
+  margin-bottom: 35px;
+}
+.card-item {
+  border: 1px solid #f1f1f1;
+  transition: transform 0.2s ease;
+  margin: 12px 0;
+}
+.card-item:hover {
+  transform: translateY(-2px);
+}
+.card-item__with-img {
+  position: relative;
+}
+.card-item__sale {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  padding: 4px 10px;
+  border-radius: 30px;
+  background-color: var(--text-dark-color);
+  color: var(--white-color);
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.card-item__img {
+  padding-top: 62.5%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-item__icon-wrap {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  transform: translateY(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #000;
+}
+.card-item__icon-wrap--red {
+  background-image: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+}
+.card-item__icon-wrap--orange {
+  background-image: linear-gradient(to right, #f3a46b 0%, #f3c96b 100%);
+}
+.card-item__icon-wrap--yellow {
+  background-image: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+}
+.card-item__icon-wrap--green {
+  background-image: linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%);
+}
+.card-item__icon-wrap--blue {
+  background-image: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%);
+}
+.card-item__icon-wrap--purple {
+  background-image: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+}
+.card-item__icon {
+  width: 26px;
+  height: 26px;
+}
+.card-item-info {
+  padding: 30px;
+}
+.card-item-info__heading {
+  color: var(--text-dark-color);
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+.card-item-info__location {
+  color: var(--text-light-color);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+.card-item-info__with-prices {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+.card-item-info__subject-wrap {
+  font-size: 1.3rem;
+  margin-right: auto;
+}
+.card-item-info__link {
+  color: var(--text-dark-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.card-item__info-old-prices {
+  margin-right: 8px;
+  color: var(--text-light-color);
+  font-size: 2rem;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+.card-item-info__prices {
+  color: var(--text-dark-color);
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+.card-item-info__desc {
+  margin: 20px 0;
+  color: var(--text-dark-color);
+  font-size: 1.4rem;
+  line-height: 2.9rem;
+  letter-spacing: 1px;
+}
+.card-item-info__btn {
+  padding: 12px 20px;
+  -webkit-tap-highlight-color: transparent;
+}
+.card-item-info__btn:hover {
+  filter: brightness(0.95);
+} /* End cards */

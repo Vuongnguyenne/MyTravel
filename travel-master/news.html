@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News - Love Travel</title>
+    <link rel="icon" href="./assets/images/icon.jpg" sizes="32x32">
+    <!-- Reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/font/fontawesome-5.15.3/css/all.min.css" />
+    <!-- My style -->
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/destination.css" />
+    <link rel="stylesheet" href="./assets/css/news.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Start header with search -->
+      <section class="header-wrap" style="background-image: linear-gradient( #434a544d, #434a544d), url(./assets/images/parallax-3.jpg)">
+        <!-- Start header -->
+        <header class="header">
+          <a href="./index.html" class="header__logo">
+            <img src="./assets/images/logo.png" alt="" class="header__logo-img" />
+          </a>
+          <ul class="navbar-list hide-on-mobile-tablet">
+            <li class="navbar-list__item"><a href="./index.html" class="navbar-list__link">HOME</a></li>
+            <li class="navbar-list__item">
+              <a href="./packages.html" class="navbar-list__link">PACKAGES</a>
+              <!-- Subnav -->
+              <ul class="navbar-list__subnav">
+                <li class="navbar-list__subnav-item item-tag--active-red">
+                  <a href="" class="navbar-list__subnav-link">
+                    Search 1
+                    <span class="item-tag"></span>
+                  </a>
+                </li>
+                <li class="navbar-list__subnav-item">
+                  <a href="" class="navbar-list__subnav-link">Search 2</a>
+                </li>
+                <li class="navbar-list__subnav-item item-has-children">
+                  <a href="" class="navbar-list__subnav-link">Tour Package</a>
+                  <!-- Secondary subnav -->
+                  <ul class="navbar-list__subnav">
+                    <li class="navbar-list__subnav-item item-tag--active-blue">
+                      <a href="" class="navbar-list__subnav-link">
+                        Carousel
+                        <span class="item-tag"></span>
+                      </a>
+                    </li>
+                    <li class="navbar-list__subnav-item">
+                      <a href="" class="navbar-list__subnav-link">Custom Map</a>
+                    </li>
+                    <li class="navbar-list__subnav-item">
+                      <a href="" class="navbar-list__subnav-link">360 Panorama</a>
+                    </li>
+                    <li class="navbar-list__subnav-item">
+                      <a href="" class="navbar-list__subnav-link">Default</a>
+                    </li>
+                  </ul>
+                  <!-- End secondary subnav -->
+                </li>
+                <li class="navbar-list__subnav-item">
+                  <a href="" class="navbar-list__subnav-link">Destination</a>
+                </li>
+                <li class="navbar-list__subnav-item">
+                  <a href="" class="navbar-list__subnav-link">Typology</a>
+                </li>
+              </ul>
+              <!-- End subnav -->
+            </li>
+            <li class="navbar-list__item">
+              <a href="./shop.html" class="navbar-list__link">SHOP</a>
+              <!-- Subnav -->
+              <ul class="navbar-list__subnav">
+                <li class="navbar-list__subnav-item"><a href="" class="navbar-list__subnav-link">Archive</a></li>
+                <li class="navbar-list__subnav-item"><a href="" class="navbar-list__subnav-link">Single Product</a></li>
+                <li class="navbar-list__subnav-item"><a href="" class="navbar-list__subnav-link">Cart</a></li>
+                <li class="navbar-list__subnav-item"><a href="" class="navbar-list__subnav-link">Checkout</a></li>
+              </ul>
+              <!-- End subnav -->
+            </li>
+            <li class="navbar-list__item">
+              <a href="./about.html" class="navbar-list__link">ABOUT US</a>
+              <!-- Subnav -->
+              <ul class="navbar-list__subnav">
+                <li class="navbar-list__subnav-item item-tag--active-green">
+                  <a href="" class="navbar-list__subnav-link">About Us<span class="item-tag"></span></a>
+                </li>
+                <li class="navbar-list__subnav-item"><a href="" class="navbar-list__subnav-link">About Us 2</a></li>
+                <li class="navbar-list__subnav-item"><a href="" class="navbar-list__subnav-link">About Us 3</a></li>
+              </ul>
+              <!-- End subnav -->
+            </li>
+            <li class="navbar-list__item">
+              <a href="#" class="navbar-list__link">PAGES</a>
+              <!-- Subnav -->
+              <ul class="navbar-list__subnav">
+                <li class="navbar-list__subnav-item item-tag--active-green">
+                  <a href="" class="navbar-list__subnav-link">Services</a>
+                </li>
+                <li class="navbar-list__subnav-item"><a href="" class="navbar-list__subnav-link">Agency Tours</a></li>
+                <li class="navbar-list__subnav-item"><a href="" class="navbar-list__subnav-link">Testimonials</a></li>
+                <li class="navbar-list__subnav-item"><a href="" class="navbar-list__subnav-link">Prices</a></li>
+                <li class="navbar-list__subnav-item"><a href="" class="navbar-list__subnav-link">Promotions</a></li>
+                <li class="navbar-list__subnav-item"><a href="" class="navbar-list__subnav-link">Faq</a></li>
+                <li class="navbar-list__subnav-item"><a href="" class="navbar-list__subnav-link">Comming Soon</a></li>
+                <li class="navbar-list__subnav-item item-has-children">
+                  <a href="" class="navbar-list__subnav-link">About Us</a>
+                  <!-- Secondary subnav -->
+                  <ul class="navbar-list__subnav">
+                    <li class="navbar-list__subnav-item">
+                      <a href="" class="navbar-list__subnav-link">About Us 1</a>
+                    </li>
+                    <li class="navbar-list__subnav-item">
+                      <a href="" class="navbar-list__subnav-link">About Us 2</a>
+                    </li>
+                    <li class="navbar-list__subnav-item">
+                      <a href="" class="navbar-list__subnav-link">About Us 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-list__subnav-item item-has-children">
+                  <a href="" class="navbar-list__subnav-link">Contact</a>
+                  <!-- Secondary subnav -->
+                  <ul class="navbar-list__subnav">
+                    <li class="navbar-list__subnav-item">
+                      <a href="" class="navbar-list__subnav-link">Contact 1</a>
+                    </li>
+                    <li class="navbar-list__subnav-item">
+                      <a href="" class="navbar-list__subnav-link">Contact 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-list__item">
+              <a href="./news.html" class="navbar-list__link">NEWS</a>
+              <!-- Subnav -->
+              <ul class="navbar-list__subnav">
+                <li class="navbar-list__subnav-item">
+                  <a href="" class="navbar-list__subnav-link">Archive</a>
+                </li>
+                <li class="navbar-list__subnav-item item-has-children">
+                  <a href="" class="navbar-list__subnav-link">Single Post</a>
+                  <!-- Secondary subnav -->
+                  <ul class="navbar-list__subnav">
+                    <li class="navbar-list__subnav-item">
+                      <a href="" class="navbar-list__subnav-link">Full Width</a>
+                    </li>
+                    <li class="navbar-list__subnav-item">
+                      <a href="" class="navbar-list__subnav-link">Right Sidebar</a>
+                    </li>
+                    <li class="navbar-list__subnav-item">
+                      <a href="" class="navbar-list__subnav-link">Left Sidebar</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-list__item">
+              <a href="./contact.html" class="navbar-list__link">CONTACT</a>
+              <!-- Subnav -->
+              <ul class="navbar-list__subnav">
+                <li class="navbar-list__subnav-item">
+                  <a href="" class="navbar-list__subnav-link">Contact 1</a>
+                </li>
+                <li class="navbar-list__subnav-item">
+                  <a href="" class="navbar-list__subnav-link">Contact 2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Book btn -->
+          <div class="btn btn--bg-purple header__btn hide-on-mobile-tablet">Book now</div>
+          <!-- Menu icon -->
+          <label for="switch-aside-checkbox" class="header__menu-btn">
+            <i class="header__menu-icon fas fa-bars"></i>
+          </label>
+          <input hidden type="checkbox" name="" id="switch-aside-checkbox" />
+          <!-- Aside -->
+          <label for="switch-aside-checkbox" class="aside-overlay"></label>
+          <aside class="aside">
+            <!-- Close aside button -->
+            <label for="switch-aside-checkbox" class="aside__close-btn"
+              ><img src="./assets/images/error.png" alt="" class="aside__close-img"
+            /></label>
+            <!-- =============== JUST SHOW ON PC =============== -->
+            <!-- Aside heading -->
+            <h5 class="aside__heading section__heading hide-on-mobile-tablet">BEST</h5>
+            <h3 class="aside__title section__title hide-on-mobile-tablet">
+              <u class="underline underline--yellow">PACKAGES</u>
+            </h3>
+            <!-- Start aside content -->
+            <div class="aside__content-wrap hide-on-mobile-tablet">
+              <div class="aside__item">
+                <img src="./assets/images/berlin.jpg" alt="" class="aside__item-img" />
+                <div class="aside__item-info">
+                  <a href="" class="aside__item-heading">Berlin</a>
+                  <a href="" class="aside__item-text">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Europe
+                  </a>
+                  <a href="" class="btn aside__item-btn aside__item-btn--yellow">From 700 $</a>
+                </div>
+              </div>
+              <div class="aside__item">
+                <img src="./assets/images/hongkong.jpg" alt="" class="aside__item-img" />
+                <div class="aside__item-info">
+                  <a href="" class="aside__item-heading">Hong Kong</a>
+                  <a href="" class="aside__item-text">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Asia
+                  </a>
+                  <a href="" class="btn aside__item-btn aside__item-btn--red">From 500 $</a>
+                </div>
+              </div>
+              <div class="aside__item">
+                <img src="./assets/images/sanfran.jpg" alt="" class="aside__item-img" />
+                <div class="aside__item-info">
+                  <a href="" class="aside__item-heading">San Francisco</a>
+                  <a href="" class="aside__item-text">
+                    <i class="fas fa-map-marker-alt"></i>
+                    United States
+                  </a>
+                  <a href="" class="btn aside__item-btn aside__item-btn--purple">From 400 $</a>
+                </div>
+              </div>
+            </div>
+            <!-- End aside content -->
+            <!-- Start aside destination -->
+            <div class="aside__destination-wrap hide-on-mobile-tablet">
+              <div class="aside__destination-item destination__item">
+                <div class="destination__item-overlay">
+                  <h4 class="overlay__heading">Packages</h4>
+                  <ul class="overlay__list">
+                    <li class="overlay__item">
+                      <a href="" class="overlay__link">Berline</a>
+                    </li>
+                    <li class="overlay__item">
+                      <a href="" class="overlay__link">Amsterdam</a>
+                    </li>
+                    <li class="overlay__item">
+                      <a href="" class="overlay__link">Tuscany</a>
+                    </li>
+                    <a href="" class="overlay__btn btn">View destination</a>
+                  </ul>
+                </div>
+                <div class="destination__item-img" style="background-image: url(./assets/images/destination-9.jpg)"></div>
+                <img src="./assets/images/arch.png" alt="" class="destination__item-icon" />
+                <div class="destination__info">
+                  <h4 class="destination__info-heading">Europe</h4>
+                  <p class="destination__info-text">3 packages</p>
+                </div>
+              </div>
+              <div class="aside__destination-item destination__item">
+                <div class="destination__item-overlay">
+                  <h4 class="overlay__heading">Packages</h4>
+                  <ul class="overlay__list">
+                    <li class="overlay__item">
+                      <a href="" class="overlay__link">Phuket</a>
+                    </li>
+                    <a href="" class="overlay__btn btn">View destination</a>
+                  </ul>
+                </div>
+                <div class="destination__item-img" style="background-image: url(./assets/images/destination-5.jpg)"></div>
+                <img src="./assets/images/buddha.png" alt="" class="destination__item-icon" />
+                <div class="destination__info">
+                  <h4 class="destination__info-heading">Thailandia</h4>
+                  <p class="destination__info-text">1 packages</p>
+                </div>
+              </div>
+            </div>
+            <!-- Aside heading -->
+            <h5 class="aside__heading section__heading hide-on-mobile-tablet">LAST</h5>
+            <h3 class="aside__title section__title hide-on-mobile-tablet">
+              <u class="underline underline--orange">MINUTES</u>
+            </h3>
+            <!-- Start aside content -->
+            <div class="aside__content-wrap hide-on-mobile-tablet">
+              <div class="aside__item">
+                <img src="./assets/images/package-5-150x150.jpg" alt="" class="aside__item-img" />
+                <div class="aside__item-info">
+                  <a href="" class="aside__item-heading">Tuscany</a>
+                  <a href="" class="aside__item-text">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Italy
+                  </a>
+                  <a href="" class="btn aside__item-btn aside__item-btn--yellow">From 730 $</a>
+                </div>
+              </div>
+              <div class="aside__item">
+                <img src="./assets/images/package-4-150x150.jpg" alt="" class="aside__item-img" />
+                <div class="aside__item-info">
+                  <a href="" class="aside__item-heading">Amsterdam</a>
+                  <a href="" class="aside__item-text">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Netherlands
+                  </a>
+                  <a href="" class="btn aside__item-btn aside__item-btn--red">From 1500 $</a>
+                </div>
+              </div>
+              <div class="aside__item">
+                <img src="./assets/images/package-3-150x150.jpg" alt="" class="aside__item-img" />
+                <div class="aside__item-info">
+                  <a href="" class="aside__item-heading">Phuket</a>
+                  <a href="" class="aside__item-text">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Thailandia
+                  </a>
+                  <a href="" class="btn aside__item-btn aside__item-btn--purple">From 1200 $</a>
+                </div>
+              </div>
+            </div>
+            <!-- =============== JUST SHOW ON MOBILE AND TABLET =============== -->
+            <ul class="aside__navbar hide-on-pc">
+              <li class="aside__navbar-item">
+                <a href="./index.html" class="aside__navbar-link">HOME</a>
+              </li>
+              <li class="aside__navbar-item">
+                <a href="./packages.html" class="aside__navbar-link">PACKAGES</a>
+                <ul class="aside__subnav">
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">SEARCH 1</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">SEARCH 2</a></li>
+                  <li class="aside__subnav-item">
+                    <a href="" class="aside__subnav-link">TOUR PACKAGE</a>
+                    <ul class="aside__subnav">
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CAROUSEL</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CUSTOM MAP</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">36O PANORAMA</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">DEFAULT</a></li>
+                    </ul>
+                  </li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">DESTINATION</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">TYPOLOGY</a></li>
+                </ul>
+              </li>
+              <li class="aside__navbar-item">
+                <a href="./shop.html" class="aside__navbar-link">SHOP</a>
+                <ul class="aside__subnav">
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ARCHIVE</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">SINGLE PRODUCT</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CART</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CHECK OUT</a></li>
+                </ul>
+              </li>
+              <li class="aside__navbar-item">
+                <a href="./about.html" class="aside__navbar-link">ABOUT US</a>
+                <ul class="aside__subnav">
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ABOUT US</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ABOUT US 2</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ABOUT US 3</a></li>
+                </ul>
+              </li>
+              <li class="aside__navbar-item">
+                <a href="#" class="aside__navbar-link">PAGES</a>
+                <ul class="aside__subnav">
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">SERVICES</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">AGENCY TOURS</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">TESTIMONIALS</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">PRICES</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">PROMOTIONS</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">FAQ</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">COMING SOON</a></li>
+                  <li class="aside__subnav-item">
+                    <a href="" class="aside__subnav-link">ABOUT US</a>
+                    <ul class="aside__subnav">
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ABOUT US 1</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ABOUT US 2</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ABOUT US 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="aside__subnav-item">
+                    <a href="" class="aside__subnav-link">CONTACT</a>
+                    <ul class="aside__subnav">
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CONTACT 1</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CONTACT 2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="aside__navbar-item">
+                <a href="./news.html" class="aside__navbar-link">
+                  <i class="aside__navbar-icon fas fa-chevron-right"></i>
+                  NEWS</a>
+                <ul class="aside__subnav">
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ARCHIVE</a></li>
+                  <li class="aside__subnav-item">
+                    <a href="" class="aside__subnav-link">SINGLE POST</a>
+                    <ul class="aside__subnav">
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">FULL WIDTH</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">RIGHT SIDEBAR</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">LEFT SIDEBAR</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="aside__navbar-item">
+                <a href="./contact.html" class="aside__navbar-link">CONTACT</a>
+                <ul class="aside__subnav">
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CONTACT 1</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CONTACT 2</a></li>
+                </ul>
+              </li>
+              <li class="aside__navbar-item">
+                <a href="" class="aside__navbar-link">BOOK NOW</a>
+              </li>
+            </ul>
+          </aside>
+        </header>
+        <!-- End header -->
+        <h1 class="header-title">Our News</h1>
+      </section>
+      <!-- End header with search -->
+      <!-- Start news -->
+      <section class="news">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-6 m-12 c-12">
+              <div class="news-item">
+                <div class="news-item__img" style="background-image: url(./assets/images/news_1.jpg)"></div>
+                <div class="news-item__info-wrap bg--green">
+                  <div class="news-item__info text--white-color">
+                    <h5 class="news-item___info-caption">OUR NEWS</h5>
+                    <h3 class="news-item___info-heading">Travel Events</h3>
+                    <p class="news-item___info-text">
+                      Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+                      orci ut et lobortis.
+                    </p>
+                    <div class="btn btn--green btn--bg-white news-item___info-btn">Read more</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l-6 m-12 c-12">
+              <div class="news-item border">
+                <div class="news-item__img" style="background-image: url(./assets/images/news_2.jpg)"></div>
+                <div class="news-item__info-wrap bg--white">
+                  <div class="news-item__info">
+                    <h5 class="news-item___info-caption text--light-color">TRAVEL TIPS</h5>
+                    <h3 class="news-item___info-heading text--dark-color">Love Travel</h3>
+                    <p class="news-item___info-text text--light-color">
+                      Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+                      orci ut et lobortis.
+                    </p>
+                    <div class="btn btn--white btn--bg-purple news-item___info-btn">Read more</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l-6 m-12 c-12">
+              <div class="news-item border news-item--reverse">
+                <div class="news-item__img" style="background-image: url(./assets/images/news_3.jpg)"></div>
+                <div class="news-item__info-wrap bg--white">
+                  <div class="news-item__info">
+                    <h5 class="news-item___info-caption text--light-color">OUR NEWS</h5>
+                    <h3 class="news-item___info-heading text--dark-color">Best Beaches</h3>
+                    <p class="news-item___info-text text--light-color">
+                      Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+                      orci ut et lobortis.
+                    </p>
+                    <div class="btn btn--white btn--bg-red news-item___info-btn">Read more</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l-6 m-12 c-12">
+              <div class="news-item news-item--reverse">
+                <div class="news-item__img" style="background-image: url(./assets/images/news_4.jpg)"></div>
+                <div class="news-item__info-wrap bg--blue">
+                  <div class="news-item__info text--white-color">
+                    <h5 class="news-item___info-caption">TRAVEL TIPS</h5>
+                    <h3 class="news-item___info-heading">New Routes</h3>
+                    <p class="news-item___info-text">
+                      Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+                      orci ut et lobortis.
+                    </p>
+                    <div class="btn btn--blue btn--bg-white news-item___info-btn">Read more</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End news -->
+      <!-- Start footer -->
+      <footer class="footer">
+        <div class="grid wide">
+          <div class="row align-items-center">
+            <div class="col l-4 l-o-2 m-12 c-12">
+              <div class="footer__with-heading">
+                <h3 class="section__heading footer__heading">KEEP IN TOUCH</h3>
+                <h5 class="section__title footer__title">Travel with Us</h5>
+              </div>
+            </div>
+            <div class="col l-6 m-12 c-12">
+              <div class="footer__with-input">
+                <input type="text" name="" id="" class="footer__input" />
+                <div class="btn btn--bg-blue footer__btn">SEND</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="row">
+              <!-- Logo and text -->
+              <div class="col l-6 m-12 c-12">
+                <div class="footer-info">
+                  <a href="" class="footer-info__logo-link"
+                    ><img src="./assets/images/footer_logo.png" alt="" class="footer-info__logo"
+                  /></a>
+                  <p class="footer-info__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh
+                    <a href="">condimentum</a> venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper.
+                  </p>
+                  <div class="footer-info__social-wrap">
+                    <a href="" class="footer-info__link">
+                      <i class="footer-info__icon fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="footer-info__link">
+                      <i class="footer-info__icon fab fa-youtube"></i>
+                    </a>
+                    <a href="" class="footer-info__link">
+                      <i class="footer-info__icon fab fab fa-facebook-square"></i>
+                    </a>
+                    <a href="" class="footer-info__link">
+                      <i class="footer-info__icon fab fa-vimeo-v"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- List -->
+              <div class="col l-2 m-4 c-12">
+                <div class="footer-list__wrap">
+                  <h4 class="footer-list__heading">OUR AGENCY</h4>
+                  <ul class="footer-list">
+                    <li class="footer-list__item"><a href="" class="footer-list__link"> Services</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Insurancee</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Agency</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Tourism</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Payment</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col l-2 m-4 c-12">
+                <div class="footer-list__wrap">
+                  <h4 class="footer-list__heading">PARTNERS</h4>
+                  <ul class="footer-list">
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Booking </a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">RentalCar</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">HostelWorld</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Trivago</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">TripAdvisor</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col l-2 m-4 c-12">
+                <div class="footer-list__wrap">
+                  <h4 class="footer-list__heading">LAST MINUTE</h4>
+                  <ul class="footer-list">
+                    <li class="footer-list__item"><a href="" class="footer-list__link">London</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">California</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Indonesia</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Europe</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Oceania</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <p class="footer__copyright-item">THE BEST WORDPRESS TRAVEL THEME</p>
+            <p class="footer__copyright-item">COPYRIGHT NICDARK THEMES 2018</p>
+          </div>
+        </div>
+      </footer>
+      <!-- End footer -->
+    </div>
+  </body>
+</html>
